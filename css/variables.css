@@ -1,8 +1,6 @@
 :root{
-    --color-primario: #651A1A;
-    --color-secundario: #8B8484;
-    --color-terciario: #3B3535;
-    --color-cuarto: #4D2F2F;
-    --color-quinto: #573232;
-    --color-sexto: rgba(255, 255, 255, 0.562);
+    --color-primario: green;
+    --color-secundario: red;
+    --color-terciario: rgba(0, 0, 0, 0.281);
+    --color-cuaternario: rgb(255, 255, 255);
 }
