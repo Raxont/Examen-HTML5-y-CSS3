@@ -1,0 +1,263 @@
+@import url(variables.css);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  padding: 1em;
+  color: var(--color-primario);
+}
+header{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  z-index: -1000;
+}
+.header_ul{
+  width: 100%;
+  height: 100%;
+  max-width: 90%;
+  
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5em;
+}
+.header_ul li{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 1em;
+  list-style: none;
+}
+.bx-universal-access{
+  font-size: 4em;
+}
+main{
+  width: 100%;
+  height: 90%;
+  z-index: -1000;
+  position: absolute;
+}
+.main_contenedor{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2em;
+    max-height: 95vh;
+    overflow-y: scroll;
+    
+}
+.main_article{
+  width: 100%;
+  height: 90%;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: 1fr repeat(2,2fr);
+  grid-template-rows: repeat(4,1fr);
+  grid-template-areas: 
+  "div1 grande texto"
+  "div2 grande texto"
+  "div3 grande texto"
+  "div4 grande texto"
+  ;
+  overflow: hidden;
+  border: 5px solid var(--color-secundario);
+  background: var(--color-terciario);
+}
+.div1{
+  grid-area: div1;
+}
+.div2{
+  grid-area: div2;
+}
+.div3{
+  grid-area: div3;
+}
+.div4{
+  grid-area: div4;
+}
+.div5{
+  grid-area: grande;
+  width: 95%;
+  height: 97.5%;
+  border: 5px solid var(--color-secundario);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.div6{
+  grid-area: texto;
+}
+.div1,.div2,.div3,.div4{
+  width: 90%;
+  height: 90%;
+  border: 5px solid var(--color-secundario);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.div5 img{
+  width: 100%;
+  height: 100%;
+}
+.div1 img, .div2 img, .div3 img, .div4 img{
+  width: 50%;
+  height: 100%;
+}
+.div6{
+  padding-right:8em;
+  width: 95%;
+  height: 97.5%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.div6 h1{
+  font-size: 3.5em;
+}
+.div6_imagenes{
+  display: flex;
+}
+.div6_imagenes i{
+  width: 15%;
+  height: 50%;
+  font-size: 3em;
+}
+.div6_Pprincipal{
+  font-size: 1.5em;
+}
+.div6_Psecundario{
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  gap: 3.5em;
+  align-items: end;
+}
+.Psecundario_1{
+  font-size: 3em;
+}
+.Psecundario_2{
+  font-size: 1.5em;
+}
+.div6_button{
+  width: 40%;
+  height: 10%;
+  font-size: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-primario);
+}
+.div6_button a{
+  text-decoration: none;
+  color: var(--color-cuaternario);
+}
+.a{
+    position: absolute;
+    z-index: 1000;
+    margin: -4em 0 0 35em;
+    background: var(--color-cuaternario);
+    width: 40vw;
+    height: 95vh;
+    border: 5px solid var(--color-secundario);
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+.a_icono{
+    width: 100%;
+    height: 5%;
+    display: flex;
+    justify-content: flex-end;
+}
+.a_icono i{
+    font-size: 2em;
+}
+.contenedorimg{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.a_img{
+    width: 100%;
+    height: 100%;
+    background: var(--color-terciario);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid var(--color-secundario);
+}
+.a_img img{
+    width: 90%;
+    height: 90%;
+}
+.a_producto{
+    width: 95%;
+    height: 97.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+  .a_h1{
+    font-size: 1.5em;
+  }
+  .a_iconos{
+    display: flex;
+  }
+  .a_iconos i{
+    width: 15%;
+    height: 5%;
+    font-size: 1em;
+  }
+  .aprincipal{
+    font-size: 1em;
+  }
+  .asecundario{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    align-items: end;
+  }
+  .asecundario_1{
+    font-size: 1.5em;
+  }
+  .asecundario_2{
+    font-size: 1em;
+  }
+  .a_input{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .a_input input{
+    height: 40%;
+  }
+  .a_button{
+    width: 40%;
+    height: 40%;
+    font-size: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-primario);
+  }
+  .a_button a{
+    text-decoration: none;
+    color: var(--color-cuaternario);
+  }
